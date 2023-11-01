@@ -1,0 +1,209 @@
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white; /* Set default text color */
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-end; /* Move to the right */
+  align-items: flex-start; /* Align to the top */
+  width: 250px;
+  height: 150px;
+}
+
+.logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h1 {
+  color: white;
+}
+
+.wrapper {
+  width: 1100px;
+  margin: auto;
+  position: relative;
+}
+
+.overlay-text {
+  color: white;
+  text-align: center;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode nav {
+  background-color: #111;
+}
+
+body.dark-mode nav a {
+  color: #fff;
+}
+
+body,
+nav {
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.menu-toggle {
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #364f6b;
+  border-radius: 50%;
+  right: 10px; /* Adjusted for right side */
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start; /* Move navbar to the left */
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background: gray;
+  z-index: 1;
+  border-bottom: 1px solid #364f6b;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex; /* Display menu items in a row */
+}
+
+nav ul li {
+  margin-right: 10px; /* Adjust spacing between menu items */
+}
+
+nav ul li a {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 18px; /* Adjust padding */
+  font-size: 23px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.kolom {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+  width: 325px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Gill Sans", sans-serif; /* Use quotes for font names */
+  color: #364f6b;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #364f6b;
+  width: 100%;
+  line-height: 50px;
+}
+
+p {
+  margin: 10px 0;
+  padding: 10px 0;
+  color: white;
+}
+
+table .border {
+  color: white;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.popup-content {
+  text-align: center;
+  background: black;
+  color: white; /* Set text color in popup content */
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+nav button {
+  margin: 2px;
+  padding: 2px;
+  background-color: #364f6b;
+  color: dark; /* Should be a color value, e.g., #333 */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+nav button:hover,
+#openPopup:hover {
+  background-color: #364f6b;
+}
+
+footer {
+  text-align: center;
+  background-color: black; /* Set background color for light mode */
+  color: #333; /* Set text color for light mode */
+}
+body.dark-mode footer {
+  background-color: #333; /* Set background color for dark mode */
+  color: black; /* Set text color for dark mode */
+}

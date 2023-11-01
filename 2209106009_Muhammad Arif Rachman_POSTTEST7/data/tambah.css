@@ -1,0 +1,61 @@
+body {
+    position: relative;
+}
+
+section {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    background-color: #272829;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+form {
+    padding: 50px;
+}
+
+.row {
+    margin-bottom: 15px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row:last-child{
+    margin-bottom: 0px;
+}
+
+input{
+    font-size: 18px;
+    height: 28px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+section button {
+    height: 28px;
+    width: 60px;
+    border-radius: 10px;
+}
+
+.akhir {
+    display: flex;
+    justify-content: right;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table {
+    width: 30%;
+}
+
+td {
+    padding: 5px;
+}
